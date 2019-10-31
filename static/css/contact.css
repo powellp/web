@@ -1,0 +1,80 @@
+body{
+	background: url(../images/pic01.jpg) no-repeat;
+	background-size: 100%;
+}
+ul{
+	display: inline;
+}
+li{
+	display: inline;
+}
+	#nav > ul {
+		margin: 0;
+	}
+
+		#nav > ul > li {
+			border-radius: 10px 10px 0 0;
+			display: inline-block;
+			margin-left: 0.5em;
+			padding: 0.5em 1.5em;
+		}
+
+			#nav > ul > li a {
+				color: #FFF;
+				text-decoration: none;
+				font-size: 1.2em;
+			}
+
+			#nav > ul > li:first-child {
+				margin-left: 0;
+			}
+
+			#nav > ul > li:hover a {
+				color: #fff;
+			}
+
+			#nav > ul > li.active {
+				background: #3ac984;
+			}
+
+				#nav > ul > li.active a {
+					color: white;
+				}
+
+			#nav > ul > li > ul {
+				display: none;
+			}
+
+
+
+	#logo {
+		font-size: 2em;
+	}
+	a{
+		color: #fff;
+		text-decoration: none;
+
+	}
+	.fname{
+		display: inline;
+	}
+	.lname{
+		display: block;
+	}
+	.content{
+		margin-top: 20px;
+	}
+	label{
+		font-weight: bold;
+		font-size: 20px;
+	}
+	.email input{
+		margin-left: 15px;
+	}
+	.textarea{
+		margin-left: 100px;
+	}
+	.submit{
+		margin-bottom: 20px;
+		margin-left: 50px;
+	}

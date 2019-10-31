@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+	<link rel="stylesheet" href="../static/css/contact.css" />
+    <link href="../static/bootstrap/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<center>
+    <form method="post" role="form" style="border: 2px solid gray; width: 30%;">
+			<div class="content">
+				<div class="fname">
+					<label>First Name</label>
+
+					<input type="text" name="fname" value="{{ request.form.fname }}" class="form-control"
+                           placeholder="First Name">
+
+				</div><br><br>
+				<div class="lname">
+					<label>Last Name</label>
+
+                    <input type="text" name="lname" value="{{ request.form.lname }}" placeholder="Last Name">
+
+
+				</div><br><br>
+				<div class="email">
+					<label>Email-Id</label>
+
+					<input type="text" name="email" value="{{ request.form.email }}" placeholder="Email-Id">
+
+				</div><br><br>
+
+				<div class="textarea">
+
+					<textarea rows="10" cols="20" name="desc" placeholder="Write here...."></textarea>
+
+				</div>
+
+                <div class="submit">
+
+                    <button type="submit" name="cont">Submit</button>
+                </div>
+
+
+
+			</div>
+
+		</form>
+	</center>
+
+
+</body>
+</html>

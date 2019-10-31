@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+    background-color: lightblue;
+}
+ .table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.button {
+    background-color: #FF0000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+}
+.button1 {
+    background-color: #2A6913;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    }
+.button2 {
+    background-color: #2A6913;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    algin:right;
+}
+</style>
+    <meta charset="UTF-8">
+    <title>update</title>
+</head>
+<body>
+
+{{ fdata2 }}
+
+
+<table>
+
+
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>SUBJECT</th>
+        <th>EMAIL</th>
+        <th>MESSAGE</th>
+    </tr>
+    {% for data in fdata %}
+    <tr>
+        <td>{{data[0]}}</td>
+        <td>{{data[1]}}</td>
+        <td>{{data[2]}}</td>
+        <td>{{data[3]}}</td>
+        <td>{{data[4]}}</td>
+    </tr>
+
+
+    {% endfor %}
+</table>
+
+
+<form method="post">
+    <input type="text" name="ID" placeholder="Enter ID: ">
+<br> <input type="text" name="email" placeholder="Enter Email"> </br>
+    <br><input type="submit" class="button1" value="Update"> </br>
+</form>
+
+</body>
+</html>
